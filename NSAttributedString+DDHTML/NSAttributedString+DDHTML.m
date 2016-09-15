@@ -52,8 +52,6 @@
 
 + (NSAttributedString *)attributedStringFromHTML:(NSString *)htmlString normalFont:(UIFont *)normalFont fontColor:(UIColor*)fontColor customLinkAttributes:(NSDictionary<NSString *, id> *)customLinkAttributes
 {
-    UIFont *preferredBodyFont = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    
     return [self attributedStringFromHTML:htmlString
                                normalFont:normalFont
                                 fontColor:fontColor
