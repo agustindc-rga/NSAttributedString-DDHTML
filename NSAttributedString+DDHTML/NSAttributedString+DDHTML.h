@@ -59,7 +59,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param htmlString HTML String
  *  @param normalFont Font to use for general text
- *  @param fontColor Font color to use for general text, except for <a> tags
+ *  @param fontColor Font color to use for general text, except for <a/> tags
  *  @param customLinkAttributes Attributes assigned to link tags, default is NSLinkAttributeName
  *
  *  @return Attributed string
@@ -75,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return Attributed string
  */
-+ (NSAttributedString *)attributedStringFromHTML:(NSString *)htmlString normalFont:(UIFont *)font imageMap:(NSDictionary<NSString *, UIImage *> *)imageMap;
++ (NSAttributedString *)attributedStringFromHTML:(NSString *)htmlString normalFont:(UIFont *)normalFont imageMap:(NSDictionary<NSString *, UIImage *> *)imageMap;
 
 @end
 
